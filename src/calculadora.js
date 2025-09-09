@@ -14,6 +14,7 @@
         throw new Error("Divisão por zero não é permitida.");
         }
         return a / b;
+    }
 
     // Função de multiplicação
     function multiply(a, b) {
