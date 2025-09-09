@@ -3,21 +3,10 @@
         return a + b;
     }   
 
-    // Exportar as funções
-    module.exports = {
-        add
-    };  
-
      // Função de subtração
     function subtract(a, b) {
         return a - b;
     }
-
-    // Exportar as funções
-    module.exports = {
-        add,
-        subtract
-    };
 
     // Função de divisão
     function divide(a, b) {
@@ -25,11 +14,22 @@
         throw new Error("Divisão por zero não é permitida.");
         }
         return a / b;
+
+    // Função de multiplicação
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    // Função de potenciação
+    function power(base, exponent) {
+        return Math.pow(base, exponent);
     }
 
     // Exportar as funções
     module.exports = {
       add,
       subtract,
+      multiply,
       divide,
+      power
     };
